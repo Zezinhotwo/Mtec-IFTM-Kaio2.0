@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@media only screen  and (min-width:320px) and (max-width:480px) {
+    .planoDeFundo{
+        position: absolute;
+        height: 100vh;
+        min-width: 100%;
+        top: 0;
+        right: 0;
+        z-index: -100;
+    }
+
+}
+@media only screen  and (min-width:768px) and (max-width:1024px) {
+
+
+}
+@media only screen and (min-width:1024px) {
+
+
+}
+
+
+
+
