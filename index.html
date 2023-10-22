@@ -7,23 +7,16 @@
     <link rel="stylesheet" href="style1.css">
     <title>Minha Página</title>
     <style>
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+       
 
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+   
+
         #background-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajustar o vídeo ao contêiner */
-}
-
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ajustar o vídeo ao contêiner */
+        }
     </style>
 </head>
 
@@ -34,10 +27,24 @@
     <header class="cabeca">
         <h3 class="titulo">OCEANO</h3>
         <h1 class="titulo titulo2">PROFUNDO</h1>
+        <a href="#titulo2">
+            <img class="ancora" src="img/peincipal_seta.png" alt="">
+        </a>
         <nav>
-            <a href="#titulo2">
-                <img class="ancora" src="img/peincipal_seta.png" alt="">
-            </a>
+            <li class="navegaçao">
+                <a class="linkH"href="#">
+                    <ol>Especies</ol>
+                </a>
+                <a class="linkH"href="#">
+                    <ol>Cuidados</ol>
+                </a>
+                <a class="linkH"href="#">
+                    <ol>Consequencias</ol>
+                </a>
+                <a class="linkH"href="#">
+                    <ol>Sobre Nós</ol>
+                </a>
+            </li>
         </nav>
     </header>
     <main class="corpo">
@@ -46,35 +53,61 @@
                 <source media="(min-width:768px)" srcset="img/2.jpg">
                 <img src="img/1.png" alt="">
             </picture>
-            <h2>Os oceanos estão mais quentes do que nunca<br /> (e isso é péssimo)</h2>
-            <p>Influenciada pelas mudanças climáticas, altas temperaturas dos mares podem impactar acelerar o
-                derretimento de geleiras e até deixar tubarões mais agressivos </p>
-            <a href="https://exame.com/ciencia/os-oceanos-estao-mais-quentes-do-que-nunca-e-isso-e-pessimo-entenda/"><button>Saiba
-                    Mais!</button></a>
+            <div class="noticias">
+                <h2>Os oceanos estão mais quentes do que nunca (e isso é péssimo)</h2>
+                <p>Influenciada pelas mudanças climáticas, altas temperaturas dos mares podem impactar acelerar o
+                    derretimento de geleiras e até deixar tubarões mais agressivos </p>
+                <a
+                    href="https://exame.com/ciencia/os-oceanos-estao-mais-quentes-do-que-nunca-e-isso-e-pessimo-entenda/"><button>Saiba
+                        Mais!</button></a>
+            </div>
         </section>
         <section class="conteudo">
-            <img src="img/conteudo.jpg" alt="">
-            <h2>Seção 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae
-                voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis
-                ab amet iure facilis quas?</p>
-            <a href="pag1.html"><button>Saiba Mais!</button></a>
+            <picture>
+                <source media="(min-width:768px)" srcset="img/2.jpg">
+                <img src="img/conteudo.jpg" alt="">
+            </picture>
+            <div class="noticias">
+                <div class="noticias">
+                    <h2>Seção 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto
+                        repudiandae
+                        voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo?
+                        Officiis
+                        ab amet iure facilis quas?</p>
+                    <a href="pag1.html"><button>Saiba Mais!</button></a>
+                </div>
+            </div>
         </section>
         <section class="conteudo">
-            <img src="img/conteudo.jpg" alt="">
-            <h2>Seção 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae
-                voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis
-                ab amet iure facilis quas?</p>
-            <a href="pag1.html"><button>Saiba Mais!</button></a>
+            <picture>
+                <source media="(min-width:768px)" srcset="img/2.jpg">
+                <img src="img/conteudo.jpg" alt="">
+            </picture>
+            <div class="noticias">
+                <h2>Seção 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto
+                    repudiandae
+                    voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo?
+                    Officiis
+                    ab amet iure facilis quas?</p>
+                <a href="pag1.html"><button>Saiba Mais!</button></a>
+            </div>
         </section>
         <section class="conteudo">
-            <img src="img/conteudo.jpg" alt="">
-            <h2>Seção 3</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae
-                voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis
-                ab amet iure facilis quas?</p>
-            <a href="pag1.html"><button>Saiba Mais!</button></a>
+            <picture>
+                <source media="(min-width:768px)" srcset="img/2.jpg">
+                <img src="img/conteudo.jpg" alt="">
+            </picture>
+            <div class="noticias">
+                <h2>Seção 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto
+                    repudiandae
+                    voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo?
+                    Officiis
+                    ab amet iure facilis quas?</p>
+                <a href="pag1.html"><button>Saiba Mais!</button></a>
+            </div>
         </section>
     </main>
     <script>
