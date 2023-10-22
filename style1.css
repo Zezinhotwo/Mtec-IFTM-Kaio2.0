@@ -48,17 +48,17 @@ body::-webkit-scrollbar{
     /* conteudo */
     .corpo {
         display: flex;
-        background: rgba(0, 27, 42, 1) 100%;
+        background: rgb(0, 27, 42) 100%;
     }
     
     .conteudo {
-        border: 0.5px solid rgba(255, 255, 255, 0.192);
+
         
         color: white;
         font: 14px arial;
         font-weight: 400;
         padding: 1em;
-        background-color: rgba(255, 255, 255, 0.089);
+       
 
         padding: 20px;
         width: 100%;
@@ -70,12 +70,12 @@ body::-webkit-scrollbar{
         
     }
     button {
-        background-color: #0597F2;
+        background-color: #d0d4d657;
         margin: auto;
         border: none;
         padding: 0.5em;
         border-radius: 20px;
-        color: #011826;
+        color: #d2e0e9ab;
         font: 16px arial;
         font-weight: bolder;
     }
