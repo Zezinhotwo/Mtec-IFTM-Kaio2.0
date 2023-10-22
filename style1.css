@@ -44,12 +44,17 @@
 
     /* conteudo */
     .corpo {
-        display: flex;
         height: 100vh;
+        display: flex;
+        
     }
 }
 
 .conteudo {
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     min-width: 100%;
