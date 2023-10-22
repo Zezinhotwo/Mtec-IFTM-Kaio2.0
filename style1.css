@@ -9,6 +9,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 
 @media only screen and (min-width:320px) and (max-width:480px) {
     .planoDeFundo {
@@ -21,7 +24,7 @@
     }
 
     .cabeca {
-
+        color: rgba(245, 245, 245, 0.842);
         height: 100vh;
         display: flex;
         align-items: center;
@@ -44,20 +47,38 @@
 
     /* conteudo */
     .corpo {
-        height: 100vh;
         display: flex;
+        background: rgba(0, 27, 42, 1) 100%;
+    }
+    
+    .conteudo {
+        border: 0.5px solid rgba(255, 255, 255, 0.192);
+        
+        color: white;
+        font: 14px arial;
+        font-weight: 400;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.089);
+
+        padding: 20px;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+
+
         
     }
-}
-
-.conteudo {
-    padding: 20px;
-    margin: 10px 0;
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
+    button {
+        background-color: #0597F2;
+        margin: auto;
+        border: none;
+        padding: 0.5em;
+        border-radius: 20px;
+        color: #011826;
+        font: 16px arial;
+        font-weight: bolder;
+    }
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {}
