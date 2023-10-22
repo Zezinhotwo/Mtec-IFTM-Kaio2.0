@@ -10,25 +10,30 @@
     scroll-behavior: smooth;
 }
 
-@media only screen  and (min-width:320px) and (max-width:480px) {
-    .planoDeFundo{
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .planoDeFundo {
         position: absolute;
-        height: 100vh;
         min-width: 100%;
+        height: 100vh;
         top: 0;
         right: 0;
         z-index: -100;
     }
-    .cabeca{
-        margin-top: 80%;
+
+    .cabeca {
+
+        height: 100vh;
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
-    .titulo{
+
+    .titulo {
         text-align: center;
         font: 25px "Black Ops One", "arial", "Helvetica", "sans-self";
     }
+
     .titulo2 {
         font: 30px "DM Serif Display", "arial", "Helvetica", "sans-self";
         letter-spacing: 3dvw;
@@ -36,23 +41,20 @@
         padding-left: 10%;
         box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
     }
+
     /* conteudo */
-    .conteudo{
+    .corpo {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-width: 100%;
+        height: 100vh;
     }
 }
-@media only screen  and (min-width:768px) and (max-width:1024px) {
 
-
-}
-@media only screen and (min-width:1024px) {
-
-
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
 }
 
+@media only screen and (min-width:768px) and (max-width:1024px) {}
 
-
-
+@media only screen and (min-width:1024px) {}
