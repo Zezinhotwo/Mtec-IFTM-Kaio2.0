@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
     <title>Minha Página</title>
     <style>
-     
-
-     
-
         nav a {
             color: #fff;
             text-decoration: none;
@@ -21,14 +18,19 @@
             flex-direction: column;
             align-items: center;
         }
+        #background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar o vídeo ao contêiner */
+}
 
-        section {
-            
-        }
     </style>
 </head>
+
 <body>
-    <video class="planoDeFundo" muted loop autoplay src="Celular.mp4"></video>
+    <video id="background-video" class="planoDeFundo" muted loop autoplay>
+        <source class="planoDeFundo" src="Celular.mp4">
+    </video>
     <header class="cabeca">
         <h3 class="titulo">OCEANO</h3>
         <h1 class="titulo titulo2">PROFUNDO</h1>
@@ -40,29 +42,49 @@
     </header>
     <main class="corpo">
         <section class="conteudo">
-            <img src="img/conteudo.jpg" alt="">
-            <h2>Seção Home</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis ab amet iure facilis quas?</p>
-            <a href="pag1.html"><button>Saiba Mais!</button></a>
+            <picture>
+                <source media="(min-width:768px)" srcset="img/2.jpg">
+                <img src="img/1.png" alt="">
+            </picture>
+            <h2>Os oceanos estão mais quentes do que nunca<br /> (e isso é péssimo)</h2>
+            <p>Influenciada pelas mudanças climáticas, altas temperaturas dos mares podem impactar acelerar o
+                derretimento de geleiras e até deixar tubarões mais agressivos </p>
+            <a href="https://exame.com/ciencia/os-oceanos-estao-mais-quentes-do-que-nunca-e-isso-e-pessimo-entenda/"><button>Saiba
+                    Mais!</button></a>
         </section>
         <section class="conteudo">
             <img src="img/conteudo.jpg" alt="">
             <h2>Seção 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis ab amet iure facilis quas?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae
+                voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis
+                ab amet iure facilis quas?</p>
             <a href="pag1.html"><button>Saiba Mais!</button></a>
         </section>
         <section class="conteudo">
             <img src="img/conteudo.jpg" alt="">
             <h2>Seção 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis ab amet iure facilis quas?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae
+                voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis
+                ab amet iure facilis quas?</p>
             <a href="pag1.html"><button>Saiba Mais!</button></a>
         </section>
         <section class="conteudo">
             <img src="img/conteudo.jpg" alt="">
             <h2>Seção 3</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis ab amet iure facilis quas?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur architecto repudiandae
+                voluptas fugiat libero tenetur officiis qui itaque, dolores quibusdam, unde, dolorum explicabo? Officiis
+                ab amet iure facilis quas?</p>
             <a href="pag1.html"><button>Saiba Mais!</button></a>
         </section>
     </main>
+    <script>
+        const videoElement = document.getElementById('background-video');
+        if (window.innerWidth >= 768) {
+            videoElement.src = 'pexels-oleksandr-pidvalnyi-14996960 (1080p).mp4'; // Vídeo para telas maiores
+        } else {
+            videoElement.src = 'Celular.mp4'; // Vídeo para telas pequenas
+        }
+    </script>
 </body>
+
 </html>
