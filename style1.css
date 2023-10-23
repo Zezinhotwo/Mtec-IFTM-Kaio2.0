@@ -45,20 +45,53 @@ body::-webkit-scrollbar {
         padding-left: 10%;
         box-shadow: 0px 0px 50px 5px rgba(94, 94, 94, 0.555);
     }
+    .navegaçao {
+        height: 40px;
+        list-style: none;
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        font: 20px "Black Ops One", "arial", "Helvetica", "sans-self";
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+        background-color: rgba(245, 245, 245, 0.329);
+    }
+      
+    .navegaçao2 {
+        z-index: 10;
+        position: fixed;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
 
-    /* navegaçao */
-    .navegaçao{
-        display: none;
+        align-items: center;
+          border-radius: 0px 0px 20px 20px;
+        font: 20px "Black Ops One", "arial", "Helvetica", "sans-self";
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+        background-color: rgba(245, 245, 245, 0.329);
     }
-    .linkH{
-        display: none;
+    
+    .linkH {
+        padding:20px;
+        color:rgba(16, 36, 36, 0.404);
+        text-decoration: none;
+        border-radius: 20px;
     }
+    
+    .linkH:hover {
+        transition-duration: 500ms;
+        transform: scale(1.05);
+        color: #ffffff ;
+    }
+
     /* conteudo */
     .corpo {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
-        background: rgba(0, 27, 42, 1) 100%;
+        background: rgb(0, 27, 42) 100%;
     }
 
     .conteudo {
@@ -74,12 +107,30 @@ body::-webkit-scrollbar {
         width: 100%;
 
         display: flex;
-        align-items: center;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
 
 
+    }
 
+    .noticias {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: black;
+        background-image: linear-gradient(40deg, #ffffff9f 0%, #ffffff7e 100%);
+        background-color: black;
+        background-color: rgba(255, 255, 255, 0.493);
+        height: 54vh;
+        border-radius: 0px 20px 20px 0px ;
+        padding: 0px 15% 0px 5%;
+        margin-right: 50px;
+
+        font-size:  15pt;
+        
+        -webkit-mask-image: linear-gradient(110deg, transparent 1%, rgb(255, 255, 255) 100%);
     }
 
     button {
@@ -92,6 +143,30 @@ body::-webkit-scrollbar {
         font: 16px arial;
         font-weight: bolder;
     }
+    /* Especies */
+    .disgne{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 5% 0% 5%;
+        border-radius: 50px;
+        height: 70vh;
+        background-image: linear-gradient(40deg, #011826 0%, #05aff29f 100%);
+        background-color: black;
+        -webkit-mask-image: linear-gradient(110deg, transparent 1%, rgb(255, 255, 255) 100%);
+    }
+    .disgne:hover{
+        background-image: linear-gradient(40deg, #011826 0%, #05aff2cc 100%);
+        background-color: black;
+        -webkit-mask-image: linear-gradient(110deg, transparent 1%, rgb(255, 255, 255) 100%);
+        transition-duration: 1000ms;
+
+        transform: scale(1.01);
+    }
+    .imgx {
+        height: 54vh;
+        border-radius: 50% 0% 10px 50%;
+}
 }
 
 @media only screen and (min-width:480px) and (max-width:1024px) {
@@ -125,11 +200,51 @@ body::-webkit-scrollbar {
         padding-left: 10%;
         box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
     }
+    .navegaçao {
+        
+        height: 40px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        font: 20px "Black Ops One", "arial", "Helvetica", "sans-self";
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+        background-color: rgba(245, 245, 245, 0.329);
+    }
+      
+    .navegaçao2 {
+        z-index: 10;
+        position: fixed;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+
+        align-items: center;
+          border-radius: 0px 0px 20px 20px;
+        font: 20px "Black Ops One", "arial", "Helvetica", "sans-self";
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+        background-color: rgba(245, 245, 245, 0.329);
+    }
+    
+    .linkH {
+        padding:20px;
+        color:rgba(16, 36, 36, 0.404);
+        text-decoration: none;
+        border-radius: 20px;
+    }
+    
+    .linkH:hover {
+        transition-duration: 500ms;
+        transform: scale(1.05);
+        color: #ffffff ;
+    }
 
     /* conteudo */
     .corpo {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         background: rgb(0, 27, 42) 100%;
     }
@@ -147,12 +262,29 @@ body::-webkit-scrollbar {
         width: 100%;
 
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
 
 
+    }
 
+    .noticias {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: black;
+        background-image: linear-gradient(40deg, #ffffff9f 0%, #ffffff7e 100%);
+        background-color: black;
+        background-color: rgba(255, 255, 255, 0.493);
+        height: 54vh;
+        border-radius: 0px 20px 20px 0px ;
+        padding: 0px 15% 0px 5%;
+        margin-right: 50px;
+
+        font-size:  15pt;
+        
+        -webkit-mask-image: linear-gradient(110deg, transparent 1%, rgb(255, 255, 255) 100%);
     }
 
     button {
@@ -165,9 +297,40 @@ body::-webkit-scrollbar {
         font: 16px arial;
         font-weight: bolder;
     }
+    /* Especies */
+    .disgne{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 5% 0% 5%;
+        border-radius: 50px;
+        height: 70vh;
+        background-image: linear-gradient(40deg, #011826 0%, #05aff29f 100%);
+        background-color: black;
+        -webkit-mask-image: linear-gradient(110deg, transparent 1%, rgb(255, 255, 255) 100%);
+    }
+    .disgne:hover{
+        background-image: linear-gradient(40deg, #011826 0%, #05aff2cc 100%);
+        background-color: black;
+        -webkit-mask-image: linear-gradient(110deg, transparent 1%, rgb(255, 255, 255) 100%);
+        transition-duration: 1000ms;
+
+        transform: scale(1.01);
+    }
+    .imgx {
+        height: 54vh;
+        border-radius: 50% 0% 10px 50%;
+}
 }
 
 @media only screen and (min-width:1024px) {
+    .fd{
+        position: fixed;
+        min-width: 100%;
+        top: 0%;
+        right: 0%;
+        z-index: -100;
+    }
     .planoDeFundo {
         position: absolute;
         min-width: 100%;
@@ -180,10 +343,12 @@ body::-webkit-scrollbar {
     .cabeca {
         color: rgba(245, 245, 245, 0.842);
         height: 100vh;
+        margin: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        z-index: 100;
     }
 
     .titulo {
@@ -202,9 +367,13 @@ body::-webkit-scrollbar {
     /* navegaçao  */
     nav {
         width: 50%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
     }
 
     .navegaçao {
+        
         height: 40px;
         list-style: none;
         display: flex;
@@ -216,15 +385,28 @@ body::-webkit-scrollbar {
         background-color: rgba(245, 245, 245, 0.329);
     }
     
+    .navegaçao2 {
+        z-index: 10;
+        position: fixed;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+
+        align-items: center;
+          border-radius: 0px 0px 20px 20px;
+        font: 20px "Black Ops One", "arial", "Helvetica", "sans-self";
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+        background-color: rgba(245, 245, 245, 0.329);
+    }
+    
     .linkH {
+        padding:20px;
         color:rgba(16, 36, 36, 0.404);
         text-decoration: none;
         border-radius: 20px;
     }
     
     .linkH:hover {
-        padding: 0px 10px 0px 10px;
-        box-shadow: 0px 0px 50px 5px rgba(255, 255, 255, 0.767);
         transition-duration: 500ms;
         transform: scale(1.05);
         color: #ffffff ;
@@ -258,7 +440,19 @@ body::-webkit-scrollbar {
     }
 
     .noticias {
-        padding: 0px 15% 0px 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: black;
+        background-image: linear-gradient(150deg, #ffffff9f 0%, #ffffff7e 100%);
+        background-color: black;
+        background-color: rgba(255, 255, 255, 0.493);
+        height: 54vh;
+        border-radius: 20px 0px 0px 20px ;
+        padding: 0px 5% 0px 10%;
+
+        font-size:  15pt;
+        
     }
 
     button {
@@ -271,4 +465,28 @@ body::-webkit-scrollbar {
         font: 16px arial;
         font-weight: bolder;
     }
+    /* Especies */
+    .disgne{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 5% 0% 5%;
+        border-radius: 50px;
+        height: 70vh;
+        background-image: linear-gradient(40deg, #011826 0%, #05aff29f 100%);
+        background-color: black;
+        -webkit-mask-image: linear-gradient(110deg, transparent 1%, rgb(255, 255, 255) 100%);
+    }
+    .disgne:hover{
+        background-image: linear-gradient(40deg, #011826 0%, #05aff2cc 100%);
+        background-color: black;
+        -webkit-mask-image: linear-gradient(110deg, transparent 1%, rgb(255, 255, 255) 100%);
+        transition-duration: 1000ms;
+
+        transform: scale(1.01);
+    }
+    .imgx {
+        height: 54vh;
+        border-radius: 0% 50% 50% 0%;
+}
 }
