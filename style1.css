@@ -419,8 +419,9 @@ body::-webkit-scrollbar {
         align-items: center;
         background: rgb(0, 27, 42) 100%;
     }
-
+    
     .conteudo {
+        margin: 0% 5% 0% 5%;
 
 
         color: white;
@@ -430,16 +431,15 @@ body::-webkit-scrollbar {
 
 
         padding: 20px;
-        width: 100%;
 
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
-
 
     }
 
     .noticias {
+        
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -454,16 +454,23 @@ body::-webkit-scrollbar {
         font-size:  15pt;
         
     }
-
+    .noticias:hover{
+        color:  #011826;
+    }
     button {
-        background-color: #d0d4d657;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.705);
+        background-color: #ffffff00;
         margin: auto;
         border: none;
+        margin-top: 5%;
         padding: 0.5em;
         border-radius: 20px;
-        color: #d2e0e9ab;
+        color: #009dff;
         font: 16px arial;
         font-weight: bolder;
+    }
+    button:hover{
+        color: #011826;
     }
     /* Especies */
     .disgne{
@@ -488,5 +495,9 @@ body::-webkit-scrollbar {
     .imgx {
         height: 54vh;
         border-radius: 0% 50% 50% 0%;
+}
+.not{
+    height:55vh;
+    width: 500px;
 }
 }
